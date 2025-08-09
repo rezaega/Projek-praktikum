@@ -144,7 +144,6 @@ fun LoginScreen(navController: NavController) {
                     usernameError = username.value.isBlank()
                     passwordError = password.value.isBlank()
 
-                    // Jika input valid, kirim permintaan login
                     if (!usernameError && !passwordError) {
                         isLoading = true
                         coroutineScope.launch {
